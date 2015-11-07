@@ -2,7 +2,7 @@
 	$filename = "pinCodeStatus.txt";
 
 	# Execute pin reading script
-	shell_exec( "sudo python getWaitPinCode.py" );
+	shell_exec( "./buttons.sh" );
 
 	// Check file exists
 	if ( file_exists( $filename ) )
@@ -12,7 +12,7 @@
 		if ( $pinStatus == "1" )
 		{
 			// Delete file
-			unlink( $filename );
+			//unlink( $filename );
 		}
 		echo $pinStatus;
 	}
