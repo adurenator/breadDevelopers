@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/moneyToIngress"
+        android:layout_width="175sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:digits="0123456789"
+        android:inputType="numberDecimal"
+        > <requestFocus></requestFocus> </EditText>
+
+    <Button
+        style="@style/MediumButton"
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingress"
+        android:layout_below="@id/moneyToIngress"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/layout" >
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/logo_la_caixa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:layout_above="@+id/habitual_operations"/>
+
+    <Button
+        android:id="@+id/habitual_operations"
+        android:text="@string/habitual_operations"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/another_operations"
+        style="@style/MediumButton"/>
+    <Button
+        android:id="@+id/another_operations"
+        android:text="@string/another_operations"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/MediumButton"/>
+    <Button
+        android:id="@+id/accesories"
+        android:text="@string/accesories"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/another_operations"
+        style="@style/MediumButton"/>
+
+
+    <Button
+        android:id="@+id/infobutton"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_margin="0sp"
+        android:text="@string/help"
+        android:layout_alignParentBottom="true"
+        style="@style/MediumButton"
+        />
+
+    <Button
+        android:id="@+id/optionbutton"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_margin="0sp"
+        android:text="@string/options"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        style="@style/MediumButton"/>
+
+
+</RelativeLayout>
